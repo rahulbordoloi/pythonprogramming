@@ -70,7 +70,7 @@ class Snake:
     # Check for the Range of Input in Manual Mode
     def checkManualMode(self, inp):
         x = int(inp)
-        if x < 2 and x >19:
+        if x not in range(2,20):
             print("Invalid Input! The Number you Entered isn't within the range of between 1 and 20")
             x = int(input("Please Enter a Number within the given Range : "))
         return x
